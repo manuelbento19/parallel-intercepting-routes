@@ -20,11 +20,10 @@ export const metadata: Metadata = {
 };
 
 type Props = {
-  modal: React.ReactNode,
   children: React.ReactNode
 }
 
-export default function RootLayout({children,modal}: Readonly<Props>) {
+export default function RootLayout({children}: Readonly<Props>) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
@@ -32,7 +31,6 @@ export default function RootLayout({children,modal}: Readonly<Props>) {
           <Header/>
           <section className="h-full overflow-auto">
             {children}
-            {modal}
           </section>
         </main>
       </body>

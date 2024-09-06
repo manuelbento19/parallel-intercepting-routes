@@ -1,9 +1,5 @@
-import ProductList from "@/components/ProductList";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <div className="container mx-auto">
-      <ProductList/>
-    </div>
-  );
+  return redirect("/products")
 }

@@ -9,7 +9,7 @@ type Props = {
 
 export default function Card({product}:Props) {
   return (
-    <Link href={`/${product.id}`}>
+    <Link href={`/products/${product.id}`}>
       <article className="group relative flex overflow-hidden rounded-lg bg-gray-100 shadow-lg">
         <Image src={product.image} loading="lazy" alt={product.title} width={300} height={300} className="size-full transition duration-200 group-hover:scale-110" />
       </article>
