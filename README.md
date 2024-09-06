@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Parallel Intercepting Routes with Next.js
 
-## Getting Started
+![Capa](./public/capa.png)
 
-First, run the development server:
+Este projeto demonstra o uso de **Parallel Intercepting Routes** com Next.js para criar uma experiência de navegação dinâmica e eficiente. O projeto consome uma API de produtos e permite a visualização de detalhes de um produto em um modal. Quando a página é atualizada, apenas a página do produto é exibida.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Listagem de produtos:** exibe uma lista de produtos consumidos de uma API.
+- **Modal de produto:** exibe detalhes do produto em um modal ao clicar em um item da lista.
+- **Page Refresh:** ao atualizar a página, apenas a página de detalhes do produto é exibida, sem o modal.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tecnologias Utilizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [TailwindCss](https://tailwindcss.com/)
 
-## Learn More
+## Instalação
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/manuelbento19/parallel-intercepting-routes.git
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd parallel-intercepting-routes
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+4. Inicie o servidor:
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   A app estará disponível em [http://localhost:3000](http://localhost:3000)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Uso
+
+1. **Listagem de produtos**
+   - Navegue para a página inicial e você verá uma lista de produtos carregados da API.
+
+2. **Visualizar detalhes do produto**
+   - Clique em um produto da lista para abrir um modal com detalhes do produto.
+
+3. **Atualização da página**
+   - Se você atualizar a página enquanto o modal está aberto, você será redirecionado para a página de detalhes do produto, e o modal não será exibido.
+
+## Contribuindo
+
+Se você quiser contribuir para este projeto, sinta-se à vontade para enviar pull requests. Certifique-se de seguir as diretrizes de contribuição e de que as alterações não quebrem a funcionalidade existente.
