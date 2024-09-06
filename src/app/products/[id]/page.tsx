@@ -12,7 +12,7 @@ export default async function Page({params}:Props) {
     const result = await response.json();
 
     return (
-        <div className="h-full container mx-auto flex items-center justify-center">
+        <div className="h-full container mx-auto flex">
             {result?.product && <ProductDetails product={result.product}/>}
         </div>
     )
